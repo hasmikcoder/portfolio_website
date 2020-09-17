@@ -11,62 +11,113 @@
 
    <body>
 
-        <!--Navigation-->
-      <header>
-         <div class="logo">
-           <p>Web Development</p>
-         </div>
-         
-           <div class="container">
-                <nav>
-                  <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                  </ul>
-                </nav>
-             
+
+           <!-- START NAV -->
+           <div id="header"><a href="#header"></a>
+            
+          
+            <ul class="nav">
+              <li><a href="#intro">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+           <!-- END NAV -->
+
+
+             <!--INTRODUCTION-->
+            <div class="intro" id="intro">
+               <div class="intro-inner">
+
+              <h1>Welcome to my website!</h1>
+              
+              <p><strong>I am Hasmik Varosyan - Frontend Web Developer</strong> </p>
+
+              <div class="row">
+                 <div class="column">
+                     <img class="intro" src="images/profile.jpg" alt="Hasmik's picture" style="width:100%"> 
+                 </div>
+
+                <div class="column">
+                     <img class="intro" src="images/portfolio_3.jpg" alt="Hasmik's picture" style="width:100%">
+                </div>
+
+                <div class="column">
+                     <img class="intro" src="images/portfolio_2.jpg" alt="workspace" style="width:100%">
+                </div>
+              </div>
+
+             </div>
             </div>
-      </header>
+                 <!--End Introduction-->
 
-          <!--Introduction-->
-             <section class="intro" id="home">
 
-              <h1 class="section-title">
-                Hi, I am Hasmik Varosyan
-            </h1>
-              <p class="intro-section">Front-end Developer</p>
-              <img src="images/profile.jpg" alt="Hasmik's picture">
-             </section>
+             <!--About me-->
+         <div class="about" id="about">
+          
+            <h2>About me</h2>
 
- 
-          <!--About me-->
-         <section class="about-me" id="about">
-            <h2 class="section-title">
-                Who I am</h2>
+           <div class="about-inner">
+              <div class="item">
 
-              <p> My name is Hasmik Varosyan. I am originally from Armenia, and I have been living in the U.S. since 2009.
-                <br> 
-                I am learning HTML, CSS, JavaScript, jQuery, React, Bootstrap and hope to pursue a career in Web Development soon.<br><br>
+             <p> My name is Hasmik Varosyan. I am originally from Armenia, and I have been 
+              living in the U.S. since 2009.
+              I am learning HTML, CSS, JavaScript, jQuery, React, Bootstrap and hope to pursue a career
+               in Web Development soon.
+             </p>
+
+           </div>
+              
+           <div class="item">
+                  
                 Although I have a Master's degree in Electrical Engineering, I am enjoying coding and in some ways
                 my previous education is helping me throughout this process.<br>
                 In my free time, I love to read and spend time with my family - my husband and 3 kids. We love hiking, swimming, playing boardgames,
-          and watching movies together.
+                and watching movies together.
 
-               </p>
-           <img src="images/portfolio-1.jpg" alt="Coding picture">
-          </section>
+            </div>
+          </div>
+        </div>
+
+              <!--End About me-->
+
+              <!--Projects-->
+          <div class="projects" id="projects">
+          <h2> My Projects<h2>
+
+            <div class="thumbnail_box">
+              
+                <a target="_blank" href="https://hasmikcoder.github.io/Hellen-Keller/">
+              
+                <img class="web_thumbnail" id="hellen" src="images/hellen.jpg" alt="Hellen Keller">
+                <h4>Hellen Keller</h4>
+               </a>
+            </div>
+
+            </div>
+               <!--End Projects-->
 
 
-          <!--Projects-->
-          <section class="projects" id="projects">
-          <h2 class="section-title">
-              My projects</h2>
+                 <!--Contact-->
+               <div class="contact" id="contact">
+               <h2> Contact<h2>
+      
+                  <p> My e-mail address: hasvart@gmail.com  </p>
+    
+                </div>
+                <!--End Contact-->
 
-            <p>   </p>
-         
-        </section>
+                  <!--Footer-->
+                <div class="footer">
+                    <p>&copy; 2020 My Website & Co.</p>
+                </div>
 
+               <div class="gettotop">
+               <a name="gettop"></a>
 
-  </body>
-</html>
+               <button id="btn"><a href="#header">Back to Top</a></button>
+              </div>
+
+          </body>
+        </html>
