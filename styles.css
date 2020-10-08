@@ -10,6 +10,7 @@ html, body {
   --clr-accent:#16e0bd;
   --clr-grayish:#e8f5e9;
   --clr-blue: #e8eaf6;
+  --clr-darkblue: 
 } 
 
 body{
@@ -75,6 +76,7 @@ align-items: center;
     margin: 0;
     display: flex;
     justify-content: center;
+    
  }
 
 .intro p {
@@ -82,6 +84,7 @@ align-items: center;
   line-height: 1.6;
   display: flex;
   justify-content: center;
+  
 }
 
  .intro img{
@@ -94,7 +97,7 @@ align-items: center;
 .row {
  display: flex;
  padding-right: 80px;
- }
+}
   
 .column {
     flex: 33.33%;
@@ -125,7 +128,7 @@ display: flex;
 /* Projects*/
 
 .projects {
- padding: 50px 45px;
+ padding: 20px 45px;
  text-align: center;
  display: grid;
  }
@@ -146,14 +149,26 @@ display: flex;
   box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
  }
 
-  p.caption {
+  .caption {
   padding: 5px 2px 5px 2px;
   text-align: center;
   color: var(--clr-accent);
-  font-size: 17px;
+  font-size: 20px;
   text-decoration: none;
+  color: var(--clr-dark);
+  
+}
+h7.caption{
+  font-size: 17px;
+  color: blue;
+}
+   
+  a {
+     text-decoration: none;
+     
   }
 
+  
   /* Footer*/
 
 .contact{
@@ -167,7 +182,7 @@ display: flex;
 }
 
 .contact p{
-  font-size: 1.1rem;
+  font-size: 10px;
   line-height: 1.6;
   display: flex;
   justify-content: center;
@@ -178,6 +193,9 @@ display: flex;
 }
 
 .footer {
+  background-color: var(--clr-grayish);
+  padding: 60px 15px;
+
   text-align: center;
   padding: 60px 0;
   font-size: .9rem;
@@ -208,6 +226,11 @@ display: flex;
   .fas:hover {
     color:red;
     }
+    
+   p#email{
+      color: var(--clr-dark);
+      font-size: 20px;
+   }
 
     .copyright {
       text-align: center;
