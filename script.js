@@ -1,13 +1,14 @@
-function myFunction() {
+function myEmail() {
     document.getElementById("email").innerHTML = "E-mail address: hasvart@gmail.com";
   }
 
-function openSlideMenu(){
-document.getElementById('menu').style.width = '250px';
 
-}
- 
- function closeSlidemenu(){
-   document.getElementById('menu').style.width ='0';
- }
-  
+
+  function myFunction() {
+    var x = document.getElementById("side-nav");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
