@@ -38,7 +38,7 @@ line-height: 1.6;
   align-items: center;
   }
   
- .nav ul a {
+ #side-nav ul a {
     color: var(--clr-dark);
     text-decoration: none;
     display: block;
@@ -48,19 +48,19 @@ line-height: 1.6;
     font-family: 'Lucida Sans', sans-serif;
   }
   
-  .nav ul a:hover{
+  #side-nav ul a:hover{
     color: var(--clr-light);
     transform: rotate(6deg);
   }
   
-  .nav ul {
+  #side-nav ul {
     list-style: none;
     font-weight: bolder;
     padding: 30px 30px;
     float: right;
    }
   
-  .nav ul li {
+  #side-nav ul li {
     margin-left: 20px;
     padding: 0 40px 0 40px;
     display: flex;
@@ -98,7 +98,100 @@ font-size: 18px;
  
 }
 
+.nav__toggle {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  transform: translateX(-100%);
+  background: var(--clr-light);
+  padding: 1em .5em;
+  border: 0;
+  border-radius: .25em 0 0 .25em;
+
 }
+  
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+   
+  }
+
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+ cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
 
 .intro {
   background-color: var(--clr-grayish);
