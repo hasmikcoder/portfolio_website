@@ -7,26 +7,31 @@
   
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasmik's Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="style.css"></link>
     
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&family=Lato&family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
+   
  </head>
 
    <body>
-           
-         
-         <!--Introduction-->
+     
+       <!--Introduction-->
 
-         <button id="btn">☰</button>
-      
-             <div class="intro" id="intro">
+        <button id="btn">☰</button>
+        
+           <div class="intro" id="intro">
 
-                 <div class="intro-inner">
-                          <h1>Welcome to my website!</h1>
-                              <p><strong>Hi, I am Hasmik <br> Web Developer, living in Saint Louis.<br>
-                                 I am passionate about creating websites and applications.  </strong> </p>
+                <!-- <div class="intro-inner">-->
+                  
+                  <div class="intro-item"  id="item1">
+                          <h1 id="color">Welcome to my website!</h1>
+                 </div>  
 
-                                    <nav id="nav">
+                 <div class="intro-item" id="item2">
+
+                                   <nav id="nav">
                                         <ul>
                                            <li><a href="#intro">Home</a></li>
                                            <li><a href="#about">About</a></li>
@@ -34,55 +39,52 @@
                                            <li><a href="#contact">Contact</a></li>
                                         </ul>
                                      </nav>
+                                                          
 
            <!-- Slideshow container -->
          <div class="slideshow-container">
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="images/img1.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
+              <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade">
+                      <img src="images/img1.jpg" style="width:100%">
+                  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="images/img2.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
+                  <div class="mySlides fade">
+                       <img src="images/img2.jpg" style="width:100%">
+                  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="images/img3.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
+                  <div class="mySlides fade">
+                       <img src="images/img3.jpg" style="width:100%">
+                 </div>
 
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+             <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+            <br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
+              <!-- The dots/circles -->
 
-</div>
-</div> 
-
-
-<!--End Introduction-->
+                 <div class="three-dots">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                </div>
+        </div> 
+   </div>
+               <!--End Introduction-->
 
                  <!--About me-->
-                  <div class="about" id="about">
-                      <h2>About me</h2>
+                  <div class="about">
+                     <h2>About me</h2>
+                     
                          <div class="about-inner">
+                           
                             <div class="item">
 
-                                 <p>My name is Hasmik. I am originally from Armenia, and I have been 
+                              <p><strong>Hi, I am Hasmik, a Front End Web Developer, living in Saint Louis.<br>
+                                 I am passionate about creating websites and applications using HTML, CSS and JavaScript. <br> 
+                                   I am originally from Armenia, and I have been 
                                     living in the U.S. since 2009.
                                     I started my programming journey from CoderGirl's tech training program
                                     at <a href="https://www.launchcode.org" target="_blank">LaunchCode</a>.
@@ -91,91 +93,104 @@
                             </div>
               
                             <div class="item"> 
-                  
+                                 Now I am working towards constant improvements to deeper my knowledge within
+                                Web Development.
                                 Although I have a Master's degree in Electrical Engineering, I am enjoying coding and in some ways
                                 my previous education is helping me throughout this process.<br>
                                In my free time, I love to read and spend time with my family - my husband and 3 kids. We love hiking, swimming, playing boardgames,
-                              and watching movies together.
+                               and watching movies together.
+                            </div>
+                       </div>
+                  </div>
+                  <!--End About me-->
 
-                          </div>
-                      </div>
+                  <!--Skills-->
+                  
+                      <div class="icons-grid">
+                     
+                        <h2>My skills</h2>
+                            <img class="icon-image" src="images/html-5.png" alt="HTML icon" width="80px">
+                           <img class="icon-image" src="images/css.png" alt="CSS icon" width="80px">
+                           <img class="icon-image" src="images/js.png" alt="js icon" width="80px"/>
+                           <img class="icon-image" src="images/react.png" alt="REACT icon" width="80px"/>
+                           <img class="icon-image" src="images/git.png" alt="Git icon" width="80px"/>
+                     </div>
+
+                  <!--End of Skills-->
+
+                  <!--Projects-->
+            <div class="projects" id="projects">
+                 <h2> These are some of my projects <h2>
+
+                    <div class="projects-grid">
+
+                        <a  href="https://hasmikcoder.github.io/web_group_project_1/" target="_blank">
+                          <img class="project-image" src="images/grid1.jpg" alt="Kat store"/>
+                             <p class="caption"> Kat's costume shop</p>   
+                                <h7 class="caption">My first responsive Website using HTML & CSS</h7>
+                        </a>
+
+                        <a href="https://hasmikcoder.github.io/Hellen-Keller/" target="_blank">
+                           <img class="project-image" src="images/grid3.jpg" alt="Hellen Keller"/>
+                              <p class="caption">Hellen Keller </p>
+                                 <h7 class="caption">Building a Tribute page using HTML & CSS</h7>
+                        </a>
+
+                         <a  href="https://hasmikcoder.github.io/web_group_project_2/" target="_blank">
+                            <img class="project-image" src="images/grid2.jpg" alt="Bakery website"/>
+                               <p class="caption">Get your Fix </p>
+                                  <h7 class="caption">Interactive Javascript website </h7>
+                         </a>
+
+                         <a  href="https://hasmikcoder.github.io/digital_clock/" target="_blank">
+                             <img class="project-image" src="images/grid5.png" alt="Digital clock"/>
+                                 <p class="caption">Digital clock</p>
+                                    <h7 class="caption">Digital clock using JavaScript </h7> 
+                         </a>
+
+                          <a  href="https://hasmikcoder.github.io/calculator/" target="_blank">
+                              <img class="project-image" src="images/grid4.png" alt="Calculator"/>
+                                   <p class="caption">Calculator </p>
+                                       <h7 class="caption">JavaScript calculator using modern ES6 syntax and classes </h7> 
+                         </a>
                 </div>
-                <!--End About me-->
-
-
-            <!--Projects-->
-         <div class="projects" id="projects">
-            <h2> These are some of my projects <h2>
-
-              <div class="projects-grid">
-
-                   <a  href="https://hasmikcoder.github.io/web_group_project_1/" target="_blank">
-                      <img class="project-image" src="images/grid1.jpg" alt="Kat store"/>
-                          <p class="caption"> Kat's costume shop</p>   
-                             <h7 class="caption">My first responsive Website using HTML & CSS</h7>
-                    </a>
-
-                   <a href="https://hasmikcoder.github.io/Hellen-Keller/" target="_blank">
-                       <img class="project-image" src="images/grid3.jpg" alt="Hellen Keller"/>
-                           <p class="caption">Hellen Keller </p>
-                              <h7 class="caption">Building a Tribute page using HTML & CSS</h7>
-                   </a>
-
-                   <a  href="https://hasmikcoder.github.io/web_group_project_2/" target="_blank">
-                      <img class="project-image" src="images/grid2.jpg" alt="Bakery website"/>
-                           <p class="caption">Get your Fix </p>
-                               <h7 class="caption">Interactive Javascript demonstration website to 
-                                 practice the Javascript skills </h7> 
-                   </a>
-
-                   <a  href="https://hasmikcoder.github.io/calculator/" target="_blank">
-                    <img class="project-image" src="images/grid4.png" alt="Calculator"/>
-                         <p class="caption">Calculator </p>
-                             <h7 class="caption">JavaScript calculator using modern ES6 syntax and classes </h7> 
-                    </a>
-                </div>
-              </div>
+          </div>
               
              <!--End Projects-->
 
              <!--Footer-->
                       <div class="footer" id="contact">
+                             <h2> Contact Information<h2>
+                                  <ul class="social-footer">
+                                      <li>
+                                          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                       </li>
 
-                           <h2> Contact Information<h2>
-
-                            <ul class="social-footer">
-                                  <li>
-                                      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                                  </li>
-
-                                 <li>
-                                      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                 </li>
+                                        <li>
+                                           <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        </li>
                      
-                                 <li>
-                                    <a href="https://www.github.com/hasmikcoder" target="_blank"><i class="fab fa-github"></i></a>
-                                 </li>
+                                         <li>
+                                             <a href="https://www.github.com/hasmikcoder" target="_blank"><i class="fab fa-github"></i></a>
+                                         </li>
 
-                                <li>
-                                     <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                </li>
+                                          <li>
+                                              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                          </li>
 
-                                <li>
-                                     <a href="#email"> <i onclick ="myEmail()"class="fas fa-envelope-square"></i></a>
-                                  <p id="email"></p>
-                                </li>
- 
-                             </ul>
+                                          <li>
+                                               <a href="#email"> <i onclick="myEmail()" class="fas fa-envelope-square"></i></a>
+                                                   <p id="email"></p>
+                                         </li>
+                                    </ul>
                       </div>
            
                   <div class="copyright">
                        <p>&copy; 2020 Hasmik Varosyan - My Website. </p>
                   </div>
                        <a href="#intro" class="btn-gettotop"><i class="fas fa-angle-up"></i> </a>
-               
+
                        
-
-
                 <script src="script.js"></script>
          </body>
      </html>
