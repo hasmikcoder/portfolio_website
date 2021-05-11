@@ -1,21 +1,25 @@
 //e-mail_social method 1
 
     function myEmail() {
-    document.getElementById("email").innerHTML = "E-mail address: hasvart@gmail.com";
+   document.getElementById("email").innerHTML = "E-mail address: hasvart@gmail.com";
+  
 
-}
+    }
 
-//using the addEventListener() - method 2
+
+
+
+//using the addEventListener() --- method 2
 
  /*document.querySelector(".fas").addEventListener("click", myEmail);
 
  function myEmail(){
- document.getElementById("email").innerHTML="E-mail address: hasvart@gmail.com";
+ document.getElementById("email").innerHTML ="E-mail address: hasvart@gmail.com";
 };*/ 
 
 
 
-/*   //method 3
+/* ---//method 3
 
 document.querySelector(".fas").onclick= function myEmail(){
  document.getElementById("email").innerHTML="E-mail address: hasvart@gmail.com";
@@ -23,9 +27,7 @@ document.querySelector(".fas").onclick= function myEmail(){
 };*/
 
 
- 
-
-//hamburger menu
+ //hamburger menu
   const btn = document.getElementById("btn");
   const nav = document.getElementById("nav");
   
@@ -36,11 +38,11 @@ document.querySelector(".fas").onclick= function myEmail(){
 
  
 //slideshow_carousel
- var slideIndex = 0;
- showSlides();
+  var slideIndex = 0;
+  showSlides();
  
  function showSlides() {
-   var i;
+  var i;
    
    var slides = document.getElementsByClassName("mySlides");
    for (i = 0; i < slides.length; i++) {
@@ -54,5 +56,4 @@ document.querySelector(".fas").onclick= function myEmail(){
    setTimeout(showSlides, 2000); // Change image every 2 seconds
  }
 
- 
  

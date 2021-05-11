@@ -40,40 +40,29 @@ body{
    
   }
 
-    /*.intro-inner {
-      max-width: 1200px;
-      margin: 10px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 40px;
-      grid-row-gap: 40px;
-    }*/
-
-    #item1 {
-      padding: 20px;
-      background-color: lightcyan;
+  #item1 {
+   padding: 50px 120px 70px 10px;
+   background-color: lightcyan;
      
 }
 
-     #item2 {
-      padding:50px 120px 20px 50px;
-      background-color: var(--clr-grayish);
-     
+ #item2 {
+  padding:50px 120px 20px 50px;
+  background-color: var(--clr-grayish);
 }
 
-  
+.intro h1 {
+align-self: center;
+font-family: 'Chivo', sans-serif;
+letter-spacing: 1px;
+font-size: 3.2rem;  
+margin: 20px 80px 10px 20px;
+display: flex;
+justify-content: center;
+color: var(--clr-dark);
+padding: 80px 170px 30px 10px;
+text-align: center;
 
-   .intro h1 {
-       align-self: center;
-      font-family: 'Chivo', sans-serif;
-      letter-spacing: 1px;
-      font-size: 2.9rem;  
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      color: var(--clr-dark);
-      padding: 80px 170px 30px 10px;
-      text-align: center;
 }
   
   button {
@@ -128,10 +117,10 @@ nav a {
 /* Slideshow container */
 
   .slideshow-container {
-   max-width: 100%;
+   /*max-width: 100%;*/
    position: relative;
-   width: 680px;
-   margin: 20px 0px 10px -260px;
+   width: 650px;
+   margin: 20px 40px 10px -380px;
    }
   
   /* Hide the images by default*/
@@ -147,7 +136,7 @@ nav a {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 6px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -195,7 +184,7 @@ nav a {
   padding: 30px 45px;
 }
 
- .about-inner {
+.about-inner {
   max-width: 1200px;
   margin: 10px;
   display: grid;
@@ -207,8 +196,6 @@ nav a {
  .item {
    padding: 10px 0px 10px 50px;
  }
-
-
 
 .icons-grid{
   text-align: center;
@@ -229,10 +216,10 @@ nav a {
 
 .projects-grid {
   display: grid;
- grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
- grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
   width: 100%;
-  margin: 30px 60px;
+  margin: 30px 40px;
 }
    
 .project-image {
@@ -248,17 +235,17 @@ nav a {
   padding: 5px 4px 5px 100px;
   text-align: center;
   color: var(--clr-accent);
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: var(--clr-dark);
   
   }
     
-  h7.caption {
-    font-size: 18px;
+  h7{
+    font-size: 15px;
     color: blue;
-    text-align: center;
-  padding: 5px 10px 40px 70px;
+    text-align:left;
+   padding-left: 70px;
 }
  
  a {
@@ -332,6 +319,7 @@ nav a {
       color: var(--clr-dark);
       font-size: 20px;
    }
+   
 
    .copyright {
       text-align: center;
@@ -355,6 +343,5 @@ color: var(--clr-light);
 font-size: 18px;
  margin: 10px 6px;
 }
-
 
 
